@@ -1,4 +1,5 @@
 const DataManager = require("../data/DataManager")
+const renderProductList = require("./ProductList")
 
 /*
     Purpose: Adds the event listener to the Save Product button
@@ -14,7 +15,11 @@ const addListener = () => {
         product.quantity = parseInt(document.querySelector("#productQuantity").value)
         product.type = parseInt(document.querySelector("#productType").value)
 
-        console.log(product)
+        // Save the product to the API
+        DataManager.saveProduct(product)
+            .then(() => {
+                renderProductList()
+            })
     })
 }
 

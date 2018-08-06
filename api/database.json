@@ -23,6 +23,30 @@
       "type": 3,
       "quantity": 5,
       "id": 3
+    },
+    {
+      "name": "Llama vest",
+      "description": "Very itchy",
+      "price": 1499.99,
+      "quantity": 10,
+      "type": 1,
+      "id": 4
+    },
+    {
+      "name": "Organic honey",
+      "description": "Locally sourced, gluten free, low carbon footprint honey",
+      "price": 9,
+      "quantity": 50,
+      "type": 2,
+      "id": 5
+    },
+    {
+      "name": "Coils",
+      "description": "Super dope",
+      "price": 2.99,
+      "quantity": 300,
+      "type": 3,
+      "id": 6
     }
   ],
   "types": [
