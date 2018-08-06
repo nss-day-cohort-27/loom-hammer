@@ -1,0 +1,42 @@
+{
+  "inventory": [
+    {
+      "name": "Wool scarf",
+      "description": "Vegan dyed, camel hair, triple stitched, keeps you warm all year round",
+      "price": 500,
+      "type": 1,
+      "quantity": 1000,
+      "id": 1
+    },
+    {
+      "name": "Kombucha",
+      "description": "Fermented tea that keeps you jazzed all day",
+      "price": 12,
+      "type": 2,
+      "quantity": 300,
+      "id": 2
+    },
+    {
+      "name": "Oil",
+      "description": "Himalayan non-gmo, gluten-free, artisinal, cold-brewed",
+      "price": 80,
+      "type": 3,
+      "quantity": 5,
+      "id": 3
+    }
+  ],
+  "types": [
+    {
+      "id": 1,
+      "description": "Apparel"
+    },
+    {
+      "id": 2,
+      "description": "Consumables"
+    },
+    {
+      "id": 3,
+      "description": "Vaping Equipment"
+    }
+  ]
+}
