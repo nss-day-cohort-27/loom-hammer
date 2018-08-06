@@ -47,6 +47,10 @@
       "quantity": 300,
       "type": 3,
       "id": 6
+    },
+    {
+      "isTrusted": true,
+      "id": 7
     }
   ],
   "types": [

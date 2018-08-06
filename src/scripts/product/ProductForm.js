@@ -1,26 +1,16 @@
 const DataManager = require("../data/DataManager")
 const renderProductList = require("./ProductList")
 
+let instructions = null
+
 /*
     Purpose: Adds the event listener to the Save Product button
         and construct the object to be saved to the API when the
         button is clicked
 */
 const addListener = () => {
-    document.querySelector(".btn--saveProduct").addEventListener("click", () => {
-        const product = {}
-        product.name = document.querySelector("#productName").value
-        product.description = document.querySelector("#productDescription").value
-        product.price = parseFloat(document.querySelector("#productPrice").value)
-        product.quantity = parseInt(document.querySelector("#productQuantity").value)
-        product.type = parseInt(document.querySelector("#productType").value)
-
-        // Save the product to the API
-        DataManager.saveProduct(product)
-            .then(() => {
-                renderProductList()
-            })
-    })
+    document.querySelector(".btn--saveProduct")
+        .addEventListener("click", instructions)
 }
 
 /*
@@ -59,7 +49,8 @@ const buildFormTemplate = (types) => {
     Purpose: Renders the form component to the target element
     Arguments: targetElement (string) - Query selector string for HTML element
 */
-const renderForm = (targetElement) => {
+const renderForm = (targetElement, saveInstructions) => {
+    instructions = saveInstructions
     return DataManager.getTypes()
         .then(types => {
             // Build options from the product types
