@@ -1,8 +1,6 @@
-const ProductForm = require("./product/ProductForm")
+const RenderProductForm = require("./product/ProductForm")
 
-ProductForm().then(formTemplate => {
-    document.querySelector("#container").innerHTML = formTemplate
-})
+RenderProductForm("#container")
 
 
 
