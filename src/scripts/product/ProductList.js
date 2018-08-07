@@ -4,10 +4,18 @@ function renderProductList (target, typeId) {
     DataManager.getProducts()
         .then(products => {
             const container = document.querySelector(target)
-            container.textContent = ""
+            let filteredProducts = []
 
-            // Filter all products to the ones that have the correct type
-            const filteredProducts = products.filter(prod => prod.type === typeId)
+            container.innerHTML = ""
+
+            if (!typeId) {
+                filteredProducts = products
+            } else {
+                // Filter all products to the ones that have the correct type
+                filteredProducts = products.filter(prod => {
+                    return prod.type === typeId
+                })
+            }
 
             // Display only the products that are of the correct type
             filteredProducts.forEach(product => {

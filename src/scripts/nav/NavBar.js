@@ -8,7 +8,7 @@ function renderNavBar () {
             navHTML += `<a class="navLink" id="type--${type.id}" href="#">${type.description}</a>`
         })
 
-        navHTML += "<a class=\"navLink\" href=\"#\">Create Product</a>"
+        navHTML += "<a id=\"productFormLink\" class=\"navLink\" href=\"#\">Create Product</a>"
         navHTML += "</nav>"
 
         return navHTML
