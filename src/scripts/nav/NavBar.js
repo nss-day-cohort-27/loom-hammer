@@ -5,10 +5,10 @@ function renderNavBar () {
         let navHTML = "<nav id=\"navbar\">"
 
         types.forEach(type => {
-            navHTML += `<a id="type--${type.id}" href="#">${type.description}</a>`
+            navHTML += `<a class="navLink" id="type--${type.id}" href="#">${type.description}</a>`
         })
 
-        navHTML += "<a href=\"#\">Create Product</a>"
+        navHTML += "<a class=\"navLink\" href=\"#\">Create Product</a>"
         navHTML += "</nav>"
 
         return navHTML

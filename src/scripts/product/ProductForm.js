@@ -10,7 +10,16 @@ let instructions = null
 */
 const addListener = () => {
     document.querySelector(".btn--saveProduct")
-        .addEventListener("click", instructions)
+        .addEventListener("click", () => {
+            const product = {}
+            product.name = document.querySelector("#productName").value
+            product.description = document.querySelector("#productDescription").value
+            product.price = parseFloat(document.querySelector("#productPrice").value)
+            product.quantity = parseInt(document.querySelector("#productQuantity").value)
+            product.type = parseInt(document.querySelector("#productType").value)
+
+            instructions(product)
+        })
 }
 
 /*

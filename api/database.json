@@ -51,6 +51,38 @@
     {
       "isTrusted": true,
       "id": 7
+    },
+    {
+      "isTrusted": true,
+      "id": 8
+    },
+    {
+      "isTrusted": true,
+      "id": 9
+    },
+    {
+      "name": "o",
+      "description": "o",
+      "price": 8,
+      "quantity": 8,
+      "type": 1,
+      "id": 10
+    },
+    {
+      "name": "Beard comb",
+      "description": "To keep your beard free of vaping oil",
+      "price": 9.99,
+      "quantity": 25,
+      "type": 3,
+      "id": 11
+    },
+    {
+      "name": "Thai Coffee",
+      "description": "Kaoo Jai coffee from the highlands of Thailand",
+      "price": 42.55,
+      "quantity": 250,
+      "type": 2,
+      "id": 12
     }
   ],
   "types": [
