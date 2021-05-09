@@ -24,5 +24,10 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-eslint": "^20.1.0",
     "uglify-es": "^3.3.9"
+  },
+  "dependencies": {
+    "acorn": "^5.7.4",
+    "braces": "^2.3.2",
+    "minimist": "^1.2.5"
   }
 }
