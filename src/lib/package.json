@@ -28,6 +28,7 @@
   "dependencies": {
     "acorn": "^5.7.4",
     "braces": "^2.3.2",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "websocket-extensions": "^0.1.4"
   }
 }
